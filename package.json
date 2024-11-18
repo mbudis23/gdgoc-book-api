@@ -1,0 +1,25 @@
+{
+  "name": "gdgoc-book-api",
+  "version": "1.0.0",
+  "description": "Book API for modify book in the collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbudis23/gdgoc-book-api.git"
+  },
+  "keywords": [
+    "book"
+  ],
+  "author": "Muhammad Budi Setiawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbudis23/gdgoc-book-api/issues"
+  },
+  "homepage": "https://github.com/mbudis23/gdgoc-book-api#readme",
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}
