@@ -27,7 +27,6 @@ exports.addLog = (req, res, next) => {
     const method = req.method;
     const url = req.originalUrl;
 
-    // Log request saat selesai (dengan status)
     res.on('finish', () => {
         const status = res.statusCode;
         const logMessage = `IP: ${clientIp} - Method: ${method} - URL: ${url} - Status: ${status}`;
