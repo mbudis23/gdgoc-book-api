@@ -30,6 +30,10 @@ exports.updateBook = async (id, updates) => {
     const now = new Date().toISOString();
     updates.updated_at = now;
     const bookRef = db.ref(`books/${id}`);
+    const snapshot = await bookRef.once('value');
+    if (!snapshot.exists()) {
+        throw new Error("Book not found");
+    }
     await bookRef.update(updates);
     const updatedSnapshot = await bookRef.once('value');
     const updatedBook = updatedSnapshot.val();
@@ -39,7 +43,7 @@ exports.updateBook = async (id, updates) => {
     }
   
     return {
-        id: Number(id),  // Konversi ID ke number
+        id: Number(id),
         title: updatedBook.title,
         author: updatedBook.author,
         published_at: updatedBook.published_at,

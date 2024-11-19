@@ -21,11 +21,17 @@
   },
   "homepage": "https://github.com/mbudis23/gdgoc-book-api#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "corss": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "firebase": "^11.0.2",
     "firebase-admin": "^13.0.0",
+    "helmet": "^8.0.0",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "request-ip": "^3.3.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
   }
 }
