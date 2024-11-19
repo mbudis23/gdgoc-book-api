@@ -4,7 +4,8 @@
   "description": "Book API for modify book in the collection",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "firebase": "^11.0.2",
-    "firebase-admin": "^13.0.0"
+    "firebase-admin": "^13.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7"
   }
 }
