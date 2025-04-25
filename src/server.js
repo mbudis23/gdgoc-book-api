@@ -4,12 +4,15 @@ const morgan = require('morgan');
 // const requestIp = require('request-ip');
 const bookRoutes = require('./routes/bookRoutes');
 // const { addLog } = require('./utils/logger');
+const cors = require('cors');
+
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(cors());
 // app.use(requestIp.mw());
 // app.use(addLog);
 
